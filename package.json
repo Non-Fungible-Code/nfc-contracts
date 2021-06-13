@@ -1,0 +1,31 @@
+{
+  "name": "nfc-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Non-Fungible-Code/nfc-contracts.git",
+  "author": "Harry Chang <harry830622@gmail.com>",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-solhint": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-upgradeable": "^4.1.0",
+    "@openzeppelin/hardhat-upgrades": "^1.8.2",
+    "chai": "^4.2.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.1.4",
+    "hardhat": "^2.3.0",
+    "hardhat-contract-sizer": "^2.0.3",
+    "prettier": "^2.3.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "^0.0.5"
+  }
+}
