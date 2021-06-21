@@ -16,6 +16,7 @@ describe('NFC', function () {
       'Non-Fungible Code Test',
       'NFCT',
       'ipfs://',
+      'ipfs://QmP33nhfy2hrERr3eGqAG3uRM2w479QZLx31ZrfCTHZpLi',
       await treasury.getAddress(),
       '1000',
     ]);

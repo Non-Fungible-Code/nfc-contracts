@@ -1,0 +1,8 @@
+{
+  "name": "Non-Fungible Code",
+  "description": "Non-Fungible Code (NFC) is the next generation NFT which enables infinite possibilities such as truly dynamic NFTs, interactive NFTs, meta NFTs, and everything you can imagine as long as it can be done by web2 technology (HTML5 & JavaScript)",
+  "image": "ipfs://QmQkqVTtnQmB4dDXk4b6F1tmKGepUd5UEK9WHy91x7iLhM",
+  "external_link": "https://nfcode.art",
+  "seller_fee_basis_points": 750,
+  "fee_recipient": "0x40301310d0364555abF68EED390C6B03f838F868"
+}

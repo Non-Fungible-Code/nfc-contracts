@@ -34,7 +34,9 @@ contract NFC is
     }
 
     CountersUpgradeable.Counter private _nextTokenId;
+
     string private _baseTokenUri;
+    string private _contractUri;
 
     CountersUpgradeable.Counter private _nextProjectId;
     mapping(uint256 => Project) private _projectById;
@@ -81,6 +83,7 @@ contract NFC is
         string memory name,
         string memory symbol,
         string memory baseTokenUri,
+        string memory contractUri,
         address payable treasury,
         uint256 feeInBp
     ) public initializer {
@@ -103,6 +106,7 @@ contract NFC is
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
 
         _baseTokenUri = baseTokenUri;
+        _contractUri = contractUri;
         _treasury = treasury;
         _feeInBp = feeInBp;
     }
@@ -118,6 +122,10 @@ contract NFC is
         returns (string memory)
     {
         return super.tokenURI(tokenId);
+    }
+
+    function contractURI() public view returns (string memory) {
+        return _contractUri;
     }
 
     function numProjects() public view returns (uint256) {
@@ -252,6 +260,10 @@ contract NFC is
         _projectById[projectId].isPaused = false;
 
         emit ProjectUnpaused(_msgSender(), projectId);
+    }
+
+    function setContractURI(string memory contractUri) public onlyAdmin {
+        _contractUri = contractUri;
     }
 
     function setTreasury(address payable addr) public onlyAdmin {
